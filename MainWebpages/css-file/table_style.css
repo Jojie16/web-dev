@@ -1,0 +1,57 @@
+
+    /* NOT INCLUDED */
+
+body {
+
+    background-color: #b1b1b1;
+
+}
+
+table {
+
+    border: 3px solid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    font-weight: 600;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 8px 14px 12px #333;
+    background-color: #000;
+
+}
+
+thead {
+
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+}
+
+tbody {
+
+    text-align: center;
+
+}
+
+.pending {
+
+    background-color: #ff1b1b;
+
+}
+
+.delivered {
+
+    background-color: #1bff1b;
+
+}
+
+.inprogress {
+
+    background-color: #ffff2e;
+
+}
