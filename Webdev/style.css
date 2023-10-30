@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+/* 
+*{
+    font-family: 'Poppins', sans-serif;
+
+} */
+
+body {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow to the navbar */
+    position: relative; /* Set the navbar as a relative position */
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+
+}
+
+nav li {
+    margin: 0 20px;
+    position: relative;
+    text-align: center;
+}
+
+nav li:not(:last-child) {
+    border-right: 1px solid #c6c9cc;
+    height: 50%;
+    padding-right: 50px; /* Adding space between the border and the text */
+    /* background-color: #777; */
+}
+
+nav a:not(.VIpgJd-ZVi9od-l4eHX-hSRGPd) {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Arrange the icon and text in a column */
+    align-items: center; /* Center the items horizontally */
+}
+
+
+nav a i {
+    margin-bottom: 15px; /* Add space between the icon and the text */
+    color: #777;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%; /* Adjust the width to cover the whole text */
+    height: 2px;
+    bottom: -16px; /* Adjust the bottom position to move the label down */
+    left: 0; /* Adjust the left position to start from the left */
+    background-color: #5ac429;
+    transform: scaleX(0); /* Initially hide the underline */
+    transition: transform 0.3s ease;
+}
+
+nav a:hover::after {
+    transform: scaleX(1); /* Displaying the underline on hover */
+}
+
+nav a:hover i {
+    color: #5ac429; /* Change the color of the icon to green on hover */
+}
+
+nav a.home::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -16px;
+    left: 0;
+    background-color: #5ac429;
+    transform: scaleX(1); /* Display the underline without hover */
+}
+
+.gtranslate a:hover::after {
+    content: none; /* Remove hover effect for .gtranslate */
+}
+
+.gtranslate {
+    position: relative;
+    right: -70px;
+    top: 15px;
+}
+
+
+.home i {
+    color: #5ac429;
+}
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  nav a:not(.gtranslate):not(.home):hover i {
+    animation: bounce 0.3s ease;
+  }
+  
+
+    /* BODY */
+
+.main-bgIMG {
+
+    background-image: url('assets/primary-provider-bg-copy\(2\).jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    /* background-attachment: fixed; */
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px;
+    color: #333;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.prev-button {
+    left: 30px;
+}
+
+.next-button {
+    right: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .prev-button,
+    .next-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+#house {
+    width: 175px; /* Adjust the width in pixels */
+    height: auto;
+    position: relative;
+    left: 18%;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    position: absolute;
+    left: 17%;
+    top: 17%;
+}
+
+#primary {
+
+    text-align: left;
+    color: blue;
+    font-size: 30px;
+    -webkit-text-stroke: 1px #f0f0f0;
+
+}
+
+@media screen and (max-width: 1162px){
+    
+    nav{
+        display: none;
+    }
+
+}
