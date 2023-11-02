@@ -18,9 +18,9 @@ nav {
     width: 100%;
     display: flex;
     justify-content: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow to the navbar */
-    position: relative; /* Set the navbar as a relative position */
-    font-size: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    font-size: 13.5px;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
 }
@@ -41,7 +41,7 @@ nav li {
 nav li:not(:last-child) {
     border-right: 1px solid #c6c9cc;
     height: 50%;
-    padding-right: 50px; /* Adding space between the border and the text */
+    padding-right: 50px;
     /* background-color: #777; */
 }
 
@@ -51,34 +51,34 @@ nav a:not(.VIpgJd-ZVi9od-l4eHX-hSRGPd) {
     text-decoration: none;
     position: relative;
     display: flex;
-    flex-direction: column; /* Arrange the icon and text in a column */
-    align-items: center; /* Center the items horizontally */
+    flex-direction: column;
+    align-items: center;
 }
 
 
 nav a i {
-    margin-bottom: 15px; /* Add space between the icon and the text */
+    margin-bottom: 15px;
     color: #777;
 }
 
 nav a::after {
     content: '';
     position: absolute;
-    width: 100%; /* Adjust the width to cover the whole text */
+    width: 100%;
     height: 2px;
-    bottom: -16px; /* Adjust the bottom position to move the label down */
-    left: 0; /* Adjust the left position to start from the left */
+    bottom: -16px;
+    left: 0;
     background-color: #5ac429;
-    transform: scaleX(0); /* Initially hide the underline */
+    transform: scaleX(0);
     transition: transform 0.3s ease;
 }
 
 nav a:hover::after {
-    transform: scaleX(1); /* Displaying the underline on hover */
+    transform: scaleX(1);
 }
 
 nav a:hover i {
-    color: #5ac429; /* Change the color of the icon to green on hover */
+    color: #5ac429;
 }
 
 nav a.home::after {
@@ -89,11 +89,11 @@ nav a.home::after {
     bottom: -16px;
     left: 0;
     background-color: #5ac429;
-    transform: scaleX(1); /* Display the underline without hover */
+    transform: scaleX(1);
 }
 
 .gtranslate a:hover::after {
-    content: none; /* Remove hover effect for .gtranslate */
+    content: none;
 }
 
 .gtranslate {
@@ -128,10 +128,11 @@ nav a.home::after {
     background-image: url('assets/primary-provider-bg-copy\(2\).jpg');
     background-repeat: no-repeat;
     background-size: 100vw auto;
-    /* background-attachment: fixed; */
+    background-attachment: scroll;
     height: 100vh;
     margin: 0;
     padding: 0;
+    margin-right: 0;
 
 }
 
@@ -165,8 +166,8 @@ nav a.home::after {
     }
 }
 
-#house {
-    width: 175px; /* Adjust the width in pixels */
+#logo {
+    width: 175px;
     height: auto;
     position: relative;
     left: 18%;
@@ -174,22 +175,20 @@ nav a.home::after {
     padding: 0;
 }
 
-.logo {
+.logo-container {
     position: absolute;
-    left: 17%;
+    left: 200px;
     top: 17%;
 }
 
-#primary {
-
-    text-align: left;
-    color: blue;
+#logo-details {
+    color: #1212bd;
     font-size: 30px;
     -webkit-text-stroke: 1px #f0f0f0;
-
+    transform: scale(1);
 }
 
-@media screen and (max-width: 1162px){
+@media screen and (max-width: 995px){
     
     nav{
         display: none;
